@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>What's In My Fridge</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="/css/main.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/cover.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+
+    <!-- Icon library-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    <div class="container py-4">
+        <!-- Menu -->
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
+          <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+            <h3 class="masthead-brand">WIMF</h3>
+          </a>
+    
+          <ul class="nav">
+            <li class="nav-item"><a class="nav-link" href="receitas.html"><img class="green-filter" src="images/icons/list.svg">Receitas</a></li>
+          </ul>
+        </header>
+      
+    <!-- Container Principal-->
+    <div class="container p-4 bg-white rounded-4 border shadow-sm">
+
+        <div class="row m-2">
+
+            <!-- Lista Ingredientes -->
+            <div class="col p-3">
+                <h4 class="d-inline-block">Ingredientes</h4>
+                <span class="ms-2 mb-3 badge text-bg-primary rounded-pill"><span id="contagemIngredientes">0</span></span>
+                
+                <form class="d-flex form-group">
+                    <input type="text" id="inputIngrediente" class="form-control me-2" placeholder="Ingrediente">
+                    <button id="btn-addIngr" class="btn btn-outline-primary" type="button" onclick="novoIngrediente()">Adicionar</button>
+                    </form>
+                <div id="listaIngredientes">
+                
+                </div>
+                <button type="button" class="btn btn-danger my-2" onclick="limparIngredientes()">Limpar</button>
+
+            </div>
+
+            <!-- Lista Alergias -->
+            <div class="col p-3">
+                <h4 class="d-inline-block">Alergias</h4>
+                <span class="ms-2 mb-3 badge text-bg-primary rounded-pill"><span id="contagemAlergias">0</span></span>
+
+                <form class="d-flex form-group">
+                    <input type="text" id="inputAlergia" class="form-control me-2" placeholder="Alergia">
+                    <button id="btn-addAlerg" class="btn btn-outline-primary" type="button" onclick="novaAlergia()">Adicionar</button>
+                    </form>
+                <div id="listaAlergias">
+
+                </div>
+                <button type="button" class="btn btn-danger my-2" onclick="limparAlergias()">Limpar</button>
+
+            </div>
+                 
+        </div>
+        <!-- Lista Receitas Filtradas por Ingrediente e Alergia -->
+        <div class="row m-2 gy-4">
+            
+                <h4>Receitas Sugeridas</h1>
+                <div id="listaReceitas" class="row">
+                    
+                </div>
+            
+        </div>
+
+
+
+    </div>
+
+      
+    
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <script src="script/app.js"></script>
+    <script src="script/receita.js"></script>
+    <script>
+        mostrarListaReceitas();
+
+        
+    </script>
+  
+
+</body>
+
+</html>

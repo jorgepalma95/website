@@ -1,0 +1,42 @@
+/* Titulos */
+h1, h2, h3 {
+    color: #32795B;
+}
+
+/* Icones do menu */
+.nav-link img {
+    width: 1.5em;
+    margin: 0.4em;
+    color: #32795B;
+}
+
+/* Filtro para os icones do menu */
+.green-filter {
+    filter: invert(42%) sepia(16%) saturate(1421%) hue-rotate(103deg) brightness(89%) contrast(82%);
+}
+
+.icon {
+    width: 2em;
+}
+
+.small-icon {
+    width: 1em;
+}
+
+/* Thumbnails da lista de receitas */
+.recipe-thumbnail {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+.recipe-preview {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Tabela de ingredientes da página da receita completa*/
+.table td {
+    text-align: right;
+}
